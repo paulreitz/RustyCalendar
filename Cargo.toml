@@ -1,0 +1,11 @@
+[package]
+name = "calendar"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+iced = { version = "0.13.1", features = ["advanced", "image"] }
+chrono = "0.4"
+
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1"
